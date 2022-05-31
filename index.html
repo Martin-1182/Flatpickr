@@ -31,9 +31,9 @@
         /* Check if is friday >= 16:00 or sat. or sun. */
         var isTime = false
 
-        var isFriday = day == 5 && nowTime >= 16;
-        var isSaturday = day == 6;
-        var isSunday = day == 0;
+        var isFriday = (day == 5 && nowTime >= 16);
+        var isSaturday = (day == 6);
+        var isSunday = (day == 0);
 
         if (isFriday || isSaturday || isSunday) {
             isTime = true;
