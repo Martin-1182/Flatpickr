@@ -21,7 +21,7 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
         var today = new Date();
-        nowTime = new Date(today.getTime()).getHours();
+        var nowTime = new Date(today.getTime()).getHours();
         var day = today.getDay();
         var diff = today.getDate() - day + (day == 0 ? -6 : 1);
         var nextMonday = new Date(today.setDate(diff + 7));
